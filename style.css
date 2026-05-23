@@ -38,7 +38,7 @@ h2 {
 }
 
 .profile-image-round {
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -88,7 +88,7 @@ h2 {
 
 #secret {
   color: white;
-  transition: 1s;
+ /* transition: 1s;*/
 }
 
 
@@ -123,7 +123,7 @@ h2 {
 }
 
 #btn-fun {
-  background-color: rgba(255, 177, 0, 1);
+  background-color: rgb(165, 21, 28);
   border: 1px solid white;
   border-radius: 4px;
   color: white;
@@ -136,7 +136,7 @@ h2 {
 
 #btn-fun:hover {
   background: white;
-  color: rgba(255, 177, 0, 1);
+  color: rgb(255, 179, 0);
   transition: 0.2s;
 }
 
@@ -162,7 +162,7 @@ h2 {
 }
 
 #fun:hover {
-  background: rgba(255, 177, 0, 1);
+  background: rgb(255, 38, 0);
   color: white;
   transition: 0.6s;
 }
