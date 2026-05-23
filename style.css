@@ -159,6 +159,7 @@ h2 {
 
 #fun {
   background: rgba(255, 177, 0, 0.1);
+  color: #fff1e6;
 }
 
 #fun:hover {
@@ -194,3 +195,10 @@ ul {
 body {
   background: rgba(234, 234, 234,0.02);
 }
+
+.special-title {
+  font-family: 'Roboto';
+  color: rgb(151, 56, 56);
+}
+
+
