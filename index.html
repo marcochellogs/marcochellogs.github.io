@@ -1,60 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it" data-lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Checchi — Developer & Teacher</title>
+  <meta name="description" content="Marco Checchi — Fullstack developer, cloud engineer e insegnante. Bootcamp JS stack, rescue app vibe-coded, sviluppo piattaforme." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/f4a6667233.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="boxes">
-    <h1>Marco (Checchi) Chellogs</h1>
-    <h2>Programming with style</h2>
-    <div>
-    <img class="profile-image-round" src="images/profile-pic.jpg" alt="profile picture">
-    <p><em>Click me to check my markup skills!</em></p>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Marco Checchi</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#learn"   class="it">Impara</a>
+        <a href="#learn"   class="en">Learn</a>
+        <a href="#fix"     class="it">Sistemare</a>
+        <a href="#fix"     class="en">Fix</a>
+        <a href="#build"   class="it">Costruire</a>
+        <a href="#build"   class="en">Build</a>
+        <a href="#about"   class="it">Chi sono</a>
+        <a href="#about"   class="en">About</a>
+        <a href="#contact" class="it">Contatti</a>
+        <a href="#contact" class="en">Contact</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('it')">IT</button>
+        <button class="lang-btn"        onclick="setLang('en')">EN</button>
+      </div>
     </div>
   </div>
-  <div class="boxes" id="work">
-    <h2>Work and projects</h2>
-    <p> I'm love <strong>startups</strong> and innovative business models, so I turned to programming out of curiosity and need.</p>
-    <p> I worked in Digital Marketing in a Danish company and met awesome web developers in CPH.</p>
-    <p> 2 years ago I started a digitalization project for a goldsmith friend of mine and now we sell online.</p>
-    <div class="picture-card"><img class="fun-pic" src="images/marco-work.jpg" alt="glasses"></div>
-    <div class="picture-card"><a href="https://begoreficeria.com/blogs/notizie/come-creare-un-ecommerce-di-gioielli-online-begoreficeria"><img class="fun-pic" src="images/begoreficeria.jpeg" alt="work"></a> </div>
-    <div class="picture-card"><img class="fun-pic" src="images/glasses.jpg" alt="glasses"></div>
+</nav>
 
-    <br><a href="https://www.linkedin.com/in/marco-checchi-387828145/" target="_blank"><button id="btn-work">Check out my work</button></a>
-   </div>
-   <div class="boxes" id="fun">
-    <h2>My life outside of work</h2>
-    <p>As you might have seen from my profile pic, I rarely stay put.</p>
-    <p>I'm a lively and sociable person who <strong>loves</strong> to party and to play sports.</p><br>
-    <div class="picture-card"><img class="fun-pic" src="images/team.jpg" alt="sports"></div>
-    <div class="picture-card"> <img class="fun-pic" src="images/frendz-hostel.jpg" alt="hostel party"></div>
-    <div class="picture-card"><img class="fun-pic" src="images/party.jpg" alt="partyy"></div>
-    <!-- pic of frisbee, ping pong other -->
-    <br><a href="https://www.youtube.com/watch?v=KpllAjxOIUU" target="_blank"><button id="btn-fun">Challenge me at some sports</button></a>
-   </div>
+<div class="hero" style="border-bottom:1px solid var(--border)">
+  <div class="container">
+    <span class="hero-label it">Fullstack Developer · Cloud Engineer · Teacher</span>
+    <span class="hero-label en">Fullstack Developer · Cloud Engineer · Teacher</span>
 
-   <div class="boxes" id="hacker">
-    <h2>Is this just a plain box?</h2>
-    <p> Try to hover here...</p>
-    <p id="secret"> You found my secret message, welcome to the dark side.</p>
-    <p id="secret"> Become a hacker by clicking this link --> <a id="secret" href="https://www.wikihow.com/Hack">deepweb://3nCr1Pt3dL1nK.secret</a></p>
+    <h1 class="it">Ciao,<br/>sono <span class="name">Marco.</span></h1>
+    <h1 class="en">Hey,<br/>I'm <span class="name">Marco.</span></h1>
 
-    <br><button id="pointless-btn">Vanishing pointless button</button>
-   </div>
+    <p class="hero-sub it">
+      Sviluppatore fullstack, cloud engineer su AWS e insegnante di programmazione.
+      Ho fatto il salto da economista a developer — e ora aiuto altri a farlo,
+      o costruisco prodotti digitali solidi.
+    </p>
+    <p class="hero-sub en">
+      Fullstack developer, AWS cloud engineer and coding teacher.
+      I made the jump from economist to developer — and now I help others do the same,
+      or build solid digital products for those who need them.
+    </p>
 
-   <div class="boxes">
-    <h2>Follow me on:</h2>
-    <ul>
-      <li><a href="https://www.instagram.com/marcochellogs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.facebook.com/marco.c.checchi" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="https://github.com/marcochellogs" target="_blank"><i class="fab fa-github-square"></i></a></li>
-    </ul>
+    <div class="hero-ctas">
+      <a href="#chooser" class="btn-primary it">Come posso aiutarti?</a>
+      <a href="#chooser" class="btn-primary en">How can I help?</a>
+      <a href="#contact" class="btn-secondary it">Scrivimi</a>
+      <a href="#contact" class="btn-secondary en">Get in touch</a>
+    </div>
   </div>
+</div>
+
+<div class="chooser" id="chooser">
+  <div class="container">
+    <p class="chooser-label it">Cosa stai cercando?</p>
+    <p class="chooser-label en">What are you looking for?</p>
+
+    <div class="chooser-grid">
+
+      <a href="#learn" class="chooser-card blue">
+        <div class="chooser-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3.33 2 8.67 2 12 0v-5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="chooser-question it">Vuoi imparare a programmare?</div>
+          <div class="chooser-question en">Want to learn to code?</div>
+          <div class="chooser-hint it">Bootcamp intensivo in JS stack per chi viene dal business o dall'ingegneria.</div>
+          <div class="chooser-hint en">Intensive JS stack bootcamp for people coming from business or engineering.</div>
+        </div>
+        <div class="chooser-arrow it">Scopri il bootcamp →</div>
+        <div class="chooser-arrow en">See the bootcamp →</div>
+      </a>
+
+      <a href="#fix" class="chooser-card orange">
+        <div class="chooser-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="chooser-question it">Hai un'app da sistemare?</div>
+          <div class="chooser-question en">Got an app that needs fixing?</div>
+          <div class="chooser-hint it">Audit di sicurezza, debito tecnico e refactoring per app vibe-coded.</div>
+          <div class="chooser-hint en">Security audit, technical debt review and refactoring for vibe-coded apps.</div>
+        </div>
+        <div class="chooser-arrow it">Scopri il rescue →</div>
+        <div class="chooser-arrow en">See the rescue →</div>
+      </a>
+
+      <a href="#build" class="chooser-card green">
+        <div class="chooser-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="chooser-question it">Vuoi costruire una piattaforma?</div>
+          <div class="chooser-question en">Want to build a platform?</div>
+          <div class="chooser-hint it">Dalla service design all'MVP fino alla produzione. Con testa di business.</div>
+          <div class="chooser-hint en">From service design to MVP to production. With a business mindset.</div>
+        </div>
+        <div class="chooser-arrow it">Scopri il servizio →</div>
+        <div class="chooser-arrow en">See the service →</div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="services-wrap">
+  <div class="service-section blue-section" id="learn">
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-content">
+          <p class="service-num it">01 — Bootcamp</p>
+          <p class="service-num en">01 — Bootcamp</p>
+
+          <h2 class="service-title it">Vuoi imparare<br/>a programmare?</h2>
+          <h2 class="service-title en">Want to learn<br/>to code?</h2>
+
+          <p class="service-desc it">
+            Ho fatto esattamente il percorso che stai per fare: laurea in economia a Bologna,
+            master a Copenhagen, poi il bootcamp. So cosa blocca chi viene dal business
+            — e so come sbloccarlo. Ti insegno a costruire applicazioni web reali,
+            dall'HTML al deploy su AWS, passando per React, Node, TypeScript,
+            PostgreSQL, Docker e l'integrazione con l'AI.
+            <br/><br/>
+            <strong style="color:var(--text)">Pensato per ingegneri e laureati in economia pronti a cambiare vita.</strong>
+          </p>
+          <p class="service-desc en">
+            I made exactly the journey you're about to make: economics degree in Bologna,
+            master's in Copenhagen, then bootcamp. I know what blocks people coming from business
+            — and I know how to unblock them. I'll teach you to build real web applications,
+            from HTML to deploying on AWS, covering React, Node, TypeScript,
+            PostgreSQL, Docker, and AI integration.
+            <br/><br/>
+            <strong style="color:var(--text)">Built for engineers and economics graduates ready to change their lives.</strong>
+          </p>
+
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">HTML &amp; CSS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS</span>
+            <span class="tag">AI integration</span>
+          </div>
+        </div>
+        <div class="service-icon-wrap">
+          <div class="service-icon-big">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3.33 2 8.67 2 12 0v-5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-section orange-section" id="fix">
+    <div class="container">
+      <div class="service-inner reverse">
+        <div class="service-content">
+          <p class="service-num it">02 — App Rescue</p>
+          <p class="service-num en">02 — App Rescue</p>
+
+          <h2 class="service-title it">Hai un'app<br/>"vibe-coded"?</h2>
+          <h2 class="service-title en">Got a<br/>"vibe-coded" app?</h2>
+
+          <p class="service-desc it">
+            Hai costruito (o fatto costruire) un'app a colpi di AI e ora non sai bene
+            cosa c'è dentro? Non sei solo. Ti faccio un'analisi completa:
+            sicurezza, debito tecnico, codice strano, pattern pericolosi, performance.
+            Ti dico cosa c'è, cosa rischi — e lo sistemo, in modo che tu possa
+            scalare senza sorprese.
+          </p>
+          <p class="service-desc en">
+            You built (or had someone build) an app using AI tools and you're not quite
+            sure what's under the hood? You're not alone. I'll do a full audit:
+            security issues, technical debt, weird code, dangerous patterns, performance.
+            I'll tell you what's there, what the risks are — and then fix it,
+            so you can scale without nasty surprises.
+          </p>
+
+          <div class="tags">
+            <span class="tag it">Audit sicurezza</span>
+            <span class="tag en">Security audit</span>
+            <span class="tag it">Debito tecnico</span>
+            <span class="tag en">Technical debt</span>
+            <span class="tag">Code review</span>
+            <span class="tag">Refactoring</span>
+            <span class="tag">Performance</span>
+          </div>
+        </div>
+        <div class="service-icon-wrap">
+          <div class="service-icon-big">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-section green-section" id="build">
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-content">
+          <p class="service-num it">03 — Build</p>
+          <p class="service-num en">03 — Build</p>
+
+          <h2 class="service-title it">Hai un'idea?<br/>La costruiamo insieme.</h2>
+          <h2 class="service-title en">Got an idea?<br/>Let's build it together.</h2>
+
+          <p class="service-desc it">
+            Dalla service design all'MVP, fino a un'app pronta per la produzione.
+            Ho un background in business development e innovation — so come fare
+            le domande giuste prima di scrivere una riga di codice.
+            Costruisco prodotti che funzionano non solo tecnicamente,
+            ma come business.
+          </p>
+          <p class="service-desc en">
+            From service design to MVP to a production-ready application.
+            I have a background in business development and innovation — I know how to
+            ask the right questions before writing a single line of code.
+            I build products that work not just technically, but as businesses.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Service Design</span>
+            <span class="tag">MVP</span>
+            <span class="tag it">Architettura</span>
+            <span class="tag en">Architecture</span>
+            <span class="tag">AWS CDK</span>
+            <span class="tag it">Full deployment</span>
+            <span class="tag en">Full deployment</span>
+          </div>
+        </div>
+        <div class="service-icon-wrap">
+          <div class="service-icon-big">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="about-section" id="about">
+  <div class="container">
+    <p class="section-label it">Chi sono</p>
+    <p class="section-label en">About me</p>
+    <h2 class="section-title it">Il percorso conta<br/>quanto il codice.</h2>
+    <h2 class="section-title en">The journey matters<br/>as much as the code.</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="it">
+          Ho studiato economia a Bologna e poi fatto un master in
+          <strong>Management of Innovation</strong> a Copenhagen.
+          Stavo lavorando nel digital marketing quando ho scoperto
+          che la cosa che mi piaceva di più era capire come funzionava
+          il prodotto sotto la scocca.
+        </p>
+        <p class="it">
+          Ho fatto il <strong>bootcamp Le Wagon</strong>, mi sono innamorato del codice,
+          e ho iniziato a lavorare come fullstack developer.
+          Ho insegnato in parallelo — prima a <strong>Powercoders</strong>
+          (rifugiati che imparano a programmare, con Accenture, Enel e UNHCR),
+          poi a <strong>Le Wagon</strong> per anni.
+        </p>
+        <p class="it">
+          Oggi sono fullstack developer e cloud engineer su AWS.
+          Ho due certificazioni AWS e capisco sia il lato tecnico
+          che quello di business — ed è questo che mi rende utile
+          in tutti e tre i servizi.
+        </p>
+
+        <p class="en">
+          I studied economics in Bologna, then did a master's in
+          <strong>Management of Innovation</strong> at Copenhagen Business School.
+          I was working in digital marketing when I realized the part I loved most
+          was understanding how the product actually worked under the hood.
+        </p>
+        <p class="en">
+          I did the <strong>Le Wagon bootcamp</strong>, fell in love with code,
+          and started working as a fullstack developer.
+          I taught in parallel — first at <strong>Powercoders</strong>
+          (refugees learning to code, with Accenture, Enel and UNHCR as partners),
+          then at <strong>Le Wagon</strong> for years.
+        </p>
+        <p class="en">
+          Today I work as a fullstack developer and AWS cloud engineer.
+          I hold two AWS certifications and understand both the technical and business side —
+          and that's what makes me useful across all three services.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">5+</div>
+          <div class="stat-label it">anni da developer fullstack</div>
+          <div class="stat-label en">years as a fullstack developer</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100+</div>
+          <div class="stat-label it">studenti formati tra Le Wagon e Powercoders</div>
+          <div class="stat-label en">students trained across Le Wagon & Powercoders</div>
+        </div>
+
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-text">AWS Certified Solutions Architect</div>
+            <div class="cert-sub">Professional — lug 2025</div>
+          </div>
+        </div>
+
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-text">AWS Certified Developer</div>
+            <div class="cert-sub">Associate — lug 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <p class="section-label it" style="color:#4b5563;">Parliamoci</p>
+      <p class="section-label en" style="color:#4b5563;">Let's talk</p>
+
+      <h2 class="section-title it">Hai una domanda?<br/>Scrivimi.</h2>
+      <h2 class="section-title en">Have a question?<br/>Reach out.</h2>
+
+      <p class="contact-desc it">
+        Che tu voglia imparare, sistemare un'app o costruire qualcosa di nuovo —
+        sono curioso di sentire la tua storia.
+      </p>
+      <p class="contact-desc en">
+        Whether you want to learn, fix an app, or build something new —
+        I'm curious to hear your story.
+      </p>
+
+      <a href="mailto:marco.checchi2@gmail.com" class="contact-email">
+        marco.checchi2@gmail.com
+      </a>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/marco-checchi" target="_blank" rel="noopener">LinkedIn →</a>
+        <a href="https://github.com/marcochellogs" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p class="it">© 2026 Marco Checchi · Bologna, Italia</p>
+    <p class="en">© 2026 Marco Checchi · Bologna, Italy</p>
+  </div>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'it') || (i === 1 && lang === 'en'));
+    });
+  }
+</script>
+
 </body>
 </html>
